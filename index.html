@@ -365,12 +365,20 @@ nav {
   <div class="hero-content">
     <h2>STRINOX SYMPOSIUM 2K25</h2>
     <p>Innovate | Compete | Celebrate</p>
-    <a href="#registration" class="register-btn">Register Now</a>
-    <a href="https://chat.whatsapp.com/ET8nvMV2JzeEW1UGKH3V04?mode=ac_t" target="_blank" rel="noopener" class="whatsapp-join-btn" aria-label="Join WhatsApp Group">Join Our WhatsApp Group</a>
-    <div class="countdown" id="countdown"></div>
+<a href="#registration" class="register-btn">Register Now</a>
+<div class="countdown" id="countdown"></div>
+<a href="https://chat.whatsapp.com/ET8nvMV2JzeEW1UGKH3V04?mode=ac_t" target="_blank" rel="noopener" class="whatsapp-join-btn" aria-label="Join WhatsApp Group">Join Our WhatsApp Group</a>
   </div>
 </section>
 <style>
+
+.whatsapp-join-btn {
+  margin-top: 10.5rem;
+}
+
+.countdown {
+  margin-bottom: 1.5rem;
+}
 .whatsapp-join-btn {
   display: inline-block;
   background: #25D366; /* WhatsApp green */
@@ -872,10 +880,32 @@ memberInputs.forEach(input => {
   input.addEventListener('input', updateFee);
 });
 
+const eventPdfLinks = {
+  'Xplorelt': 'https://online.flippingbook.com/view/779086928/',
+  'BugBuster': 'path/to/bugbuster-rules.pdf',
+  'Model Matrix': 'path/to/modelmatrix-rules.pdf',
+  'MindMash': 'path/to/mindmash-rules.pdf',
+  'Treasure Hunt': 'path/to/treasurehunt-rules.pdf',
+  'Bidwar': 'path/to/bidwar-rules.pdf',
+};
+
+const eventCards = document.querySelectorAll('.event-card');
+eventCards.forEach(card => {
+card.addEventListener('click', () => {
+  let eventName = card.querySelector('h3').innerText.trim().split('\n')[0];
+  let pdfUrl = eventPdfLinks[eventName];
+  if (pdfUrl) {
+    window.open(pdfUrl, '_blank'); // This should open PDF in a new tab
+  } else {
+    alert('PDF not found for this event.');
+  } 
+});
+});
 </script>
 
 </body>
 </html>
+
 
 
 
