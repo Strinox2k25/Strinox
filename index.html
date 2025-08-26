@@ -666,12 +666,6 @@ let timer = setInterval(() => {
   countdownEl.innerHTML = `${days}d ${hours}h ${mins}m ${secs}s`;
 }, 1000);
 
-// Event Details Popup
-document.querySelectorAll('.event-card').forEach(card => {
-  card.addEventListener('click', () => {
-    alert(card.querySelector('h3').innerText + "\n\n" + card.dataset.details);
-  });
-});
 
 // Limit event selection to max 3
 const maxEvents = 3;
@@ -905,6 +899,7 @@ card.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
