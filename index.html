@@ -482,14 +482,20 @@ nav {
           <input type="checkbox" name="event" value="quiz" id="event4" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;">
           <label for="event4">Quiz</label>
         </div>
-        <div style="display:flex;align-items:center;margin-bottom:8px;">
-          <input type="checkbox" name="event" value="crackathon" id="event5" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;">
-          <label for="event5">Crackathon</label>
-        </div>
-        <div style="display:flex;align-items:center;margin-bottom:8px;">
-          <input type="checkbox" name="event" value="ipl_auction" id="event6" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;">
-          <label for="event6">IPL Auction</label>
-        </div>
+<!-- Crackathon -->
+<div style="display:flex;align-items:center;margin-bottom:8px; opacity:0.5;">
+  <input type="checkbox" name="event" value="crackathon" id="event5" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;" disabled>
+  <label for="event5">Crackathon</label>
+</div>
+<p style="margin:5px 0 15px 33px; color:#cb3737; font-size:0.98rem;">Crackathon Registration is Closed.</p>
+
+<!-- Bidwar -->
+<div style="display:flex;align-items:center;margin-bottom:8px; opacity:0.5;">
+  <input type="checkbox" name="event" value="ipl_auction" id="event6" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;" disabled>
+  <label for="event6">IPL Auction</label>
+</div>
+<p style="margin:5px 0 15px 33px; color:#cb3737; font-size:0.98rem;">Bidwar Registration is Closed.</p>
+
       </div>
     </div>
     <label style="font-weight:600;margin-top:10px;">Team Members (Max 3):</label>
@@ -884,6 +890,7 @@ card.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
