@@ -676,7 +676,8 @@ document.querySelectorAll('input[type="checkbox"][name="event"]').forEach(box =>
 
 // Define mapping of parallel (opposite) events
 const parallelMap = {
-  "event1": "event4", // Paper Presentation ↔ Quiz
+  "event1": "event4",
+  "event4": "event1", // Paper Presentation ↔ Quiz
 };
 
 // Listen for changes on event checkboxes
@@ -888,6 +889,7 @@ card.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
