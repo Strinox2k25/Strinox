@@ -135,7 +135,7 @@ body.light-theme .hero::after { background: rgba(245,247,250,0.6); }
   display:inline-block; margin-top:1.5rem;
   padding:1rem 2.2rem; font-size:1.3rem; font-weight:700;
   color:#fff; border-radius:8px; text-decoration:none;
-  background:linear-gradient(135deg, #58a6ff, #0a9396);
+  background:linear-gradient(135deg, #ff3232, #9b3a0d);
   box-shadow:0 0 18px #58a6ff66;
   letter-spacing: 0.5px;
   animation: pulseGlow 2s infinite;
@@ -365,7 +365,7 @@ nav {
   <div class="hero-content">
     <h2>STRINOX 2K25</h2>
     <p>Innovate | Compete | Celebrate</p>
-<a href="#registration" class="register-btn">Register Now</a>
+<a href="#about" class="register-btn">Registeration Closed</a>
 <div class="countdown" id="countdown"></div>
 <a href="https://chat.whatsapp.com/ET8nvMV2JzeEW1UGKH3V04?mode=ac_t" target="_blank" rel="noopener" class="whatsapp-join-btn" aria-label="Join WhatsApp Group">Join Our WhatsApp Group</a>
   </div>
@@ -417,159 +417,8 @@ nav {
     <p><strong>Date:</strong> 10th September 2025</p>
   </section>
 
-  <section id="events">
-    <h2>Events</h2>
-    <div class="events-tabs">
-      <div class="tab active" data-target="technical">Compile Crew's <p>Technical Events</p></div>
-      <div class="tab" data-target="nontechnical">Harmony Club's <p>Non-Technical Events</p></div>
-    </div>
-    <div class="events-list active" id="technical">
-      <div class="event-card" data-details="Showcase your innovative research and ideas. 2 members per team.">
-        <h3>Xplorelt <p>Paper Presentation</p></h3>
-        <p>Present your research, creativity, and innovation.</p>
-      </div>
-      <div class="event-card" data-details="Debug real-world coding challenges. 2 members per team.">
-        <h3>BugBuster <p>Debugging</p></h3>
-        <p>Crack the code and debug faster than your peers.</p>
-      </div>
-      <div class="event-card" data-details="Bring your project ideas to life. 2 members per team.">
-        <h3>Model Matrix <p>Model Presentation</p></h3>
-        <p>Showcase your working models and technical prototypes.</p>
-      </div>
-    </div>
-    <div class="events-list" id="nontechnical">
-      <div class="event-card" data-details="Challenge your general knowledge. 2 members per team.">
-        <h3>MindMash <p>Quiz</p></h3>
-        <p>Compete in a fun and knowledge-packed quiz.</p>
-      </div>
-      <div class="event-card" data-details="Crack exciting challenges in teams. 3 members per team.">
-        <h3>Treasure Hunt <p>Crackathon</p></h3>
-        <p>A fun problem-solving challenge under pressure.</p>
-      </div>
-      <div class="event-card" data-details="Experience the thrill of strategy. 4 members per team.">
-        <h3>Bidwar<p>Action Premier league</p></h3>
-        <p>Form your dream team by bidding strategically.</p>
-      </div>
-    </div>
-  </section>
-
-<section id="registration">
-  <h2>Registration</h2>
-  <form id="registrationForm">
-
-    <label style="font-weight:600; margin-bottom:10px;">Select up to 3 Events (Technical & Non-Technical): <span style="color:#cb3737;">*</span></label>
-    <div style="display: flex; gap: 2rem; margin-bottom:1.5em; flex-wrap: wrap;">
-      <!-- Technical events LEFT -->
-      <div style="flex:1; min-width:180px;">
-        <div style="font-weight:600; font-size:1.08rem; margin-bottom:9px;">Technical Events</div>
-        <div style="display:flex;align-items:center;margin-bottom:8px;">
-          <input type="checkbox" name="event" value="paper_presentation" id="event1" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;">
-          <label for="event1">Paper Presentation</label>
-        </div>
-        <div style="display:flex;align-items:center;margin-bottom:8px;">
-          <input type="checkbox" name="event" value="debugging" id="event2" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;">
-          <label for="event2">Debugging</label>
-        </div>
-        <div style="display:flex;align-items:center;margin-bottom:8px;">
-          <input type="checkbox" name="event" value="model_presentation" id="event3" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;">
-          <label for="event3">Model Presentation</label>
-        </div>
-      </div>
-
-  <p style="margin:0 0 12px 33px; color:#cb3737; font-size:1.01rem;">
-   NON techhnical Registration is Closed.
-  </p>
-</div>
-
-      </div>
-    </div>
-    <label style="font-weight:600;margin-top:10px;">Team Members (Max 3):</label>
-    <input type="text" name="member1" placeholder="Member 1 (Required)" required>
-    <input type="text" name="member2" placeholder="Member 2">
-    <input type="text" name="member3" placeholder="Member 3">
-
-<div style="display: flex; gap: 60px;">
-  <div>
-    <label style="font-weight:600; display:block; margin-bottom:18px;">Year of Studying</label>
-    <div style="display:flex; align-items:center; margin-bottom:18px;">
-      <input type="checkbox" id="year1" name="year" value="I" style="width:18px; height:18px;" onclick="handleCheckbox(this)">
-      <label for="year1" style="margin-left:12px; font-weight:500;">1st Year (I)</label>
-    </div>
-    <div style="display:flex; align-items:center; margin-bottom:18px;">
-      <input type="checkbox" id="year2" name="year" value="II" style="width:18px; height:18px;" onclick="handleCheckbox(this)">
-      <label for="year2" style="margin-left:12px; font-weight:500;">2nd Year (II)</label>
-    </div>
-  </div>
-  <div style="margin-top:37px;">
-    <div style="display:flex; align-items:center; margin-bottom:18px;">
-      <input type="checkbox" id="year3" name="year" value="III" style="width:18px; height:18px;" onclick="handleCheckbox(this)">
-      <label for="year3" style="margin-left:12px; font-weight:500;">3rd Year (III)</label>
-    </div>
-    <div style="display:flex; align-items:center; margin-bottom:18px;">
-      <input type="checkbox" id="year4" name="year" value="IV" style="width:18px; height:18px;" onclick="handleCheckbox(this)">
-      <label for="year4" style="margin-left:12px; font-weight:500;">4th Year (IV)</label>
-    </div>
-  </div>
-</div>
-
-<script>
-function handleCheckbox(clicked) {
-  // Get all checkboxes
-  const checkboxes = document.querySelectorAll('input[name="year"]');
-
-  if (clicked.checked) {
-    // Disable all except the one clicked
-    checkboxes.forEach(cb => {
-      if (cb !== clicked) cb.disabled = true;
-    });
-  } else {
-    // If unchecked, enable all checkboxes
-    checkboxes.forEach(cb => cb.disabled = false);
-  }
-}
-</script>
 
 
-
-<div style="margin-bottom:1.5em;">
-  <label for="department" style="font-weight:600;">Department:</label>
-  <input type="text" name="department" id="department" placeholder="Department (Required)" required>
-</div>
-
-<div style="margin-bottom:1.5em;">
-  <label for="collegename" style="font-weight:600;">College Name:</label>
-  <input type="text" name="collegename" id="collegename" placeholder="College Name (Required)" required>
-</div>
-    <label style="font-weight:600;margin-top:14px;">Email:</label>
-    <input type="email" name="email" placeholder="Email (Required)" required>
-    <label style="font-weight:600;margin-top:14px;">Phone:</label>
-    <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Phone (Required)" required>
-            <div style="margin-bottom:1.5em;">
-
-<section id="payment-info" style="text-align:center; margin-bottom:2.5rem;">
-  <h2 style="color:#58a6ff; margin-bottom:1rem;">Payment Information</h2>
-  <div id="totalFeeDisplay" style="font-weight:600;color:#005f73;font-size:1.19rem;margin-top:0.8em;">Total: ₹150</div>
-  <p style="margin-bottom:1.5rem;">Scan the QR code below to make payment, then upload your payment screenshot.</p>
-  <div id="qrContainer">
-    <img src="qr.jpg" alt="STRINOX 2025 Payment QR Code"
-        style="width:220px; border-radius:15px; box-shadow:0 0 15px #58a6ff66; display:block; margin:0 auto 1.2rem auto;">
-    <div style="color:#ffffff; font-size:1.07rem;"><strong>UPI ID :dsuniversity@IOB</strong></div>
-    <div style="color:#58a6ff; font-size:1.07rem;">Registration fee: ₹150 per Head</div>
-    <div style="color:#58a6ff; font-size:1.07rem;">Team Leader Should Pay for All Other Members</div>
-  </div>
-</section>
-
-  <label for="paymentScreenshot" style="font-weight:600;">Upload Payment Screenshot: <span style="color:#cb3737;">*</span></label>
-  <input type="file" name="paymentScreenshot" id="paymentScreenshot" accept="image/*" required>
-</div>
-<div style="margin-bottom:1.5em;">
-  <label for="upiTransactionId" style="font-weight:600;">UPI Transaction ID: <span style="color:#cb3737;">*</span></label>
-  <input type="text" name="upiTransactionId" id="upiTransactionId" placeholder="Enter UPI Transaction ID" required>
-</div>
-    <button type="submit">Register</button>
-
-  </form>
-</section>
 
   <section id="contact">
     <h2>Contact Us</h2>
@@ -871,6 +720,7 @@ card.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
