@@ -476,12 +476,16 @@ nav {
         </div>
       </div>
       <!-- Non-Technical events RIGHT -->
-      <div style="flex:1; min-width:180px;">
-        <div style="font-weight:600; font-size:1.08rem; margin-bottom:9px;">Non-Technical Events</div>
-        <div style="display:flex;align-items:center;margin-bottom:8px;">
-          <input type="checkbox" name="event" value="quiz" id="event4" style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;">
-          <label for="event4">Quiz</label>
-        </div>
+<!-- Quiz (Closed) -->
+<div style="display:flex;align-items:center;margin-bottom:1px; opacity:0.5;">
+  <input type="checkbox" name="event" value="quiz" id="event4"
+         style="accent-color:#ff0000;width:23px;height:23px;margin-right:10px;" disabled>
+  <label for="event4" style="margin-right:10px;">Quiz</label>
+</div>
+<p style="margin:0 0 16px 33px; color:#cb3737; font-size:1.01rem;">
+  Quiz Registration is Closed.
+</p>
+
 <!-- Crackathon -->
 <div style="display:flex;align-items:center;margin-bottom:1px; opacity:0.5;">
   <input type="checkbox" name="event" value="crackathon" id="event5"
@@ -889,6 +893,7 @@ card.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
